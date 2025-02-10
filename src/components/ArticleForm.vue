@@ -17,8 +17,12 @@ function addArticle(){
     console.log('ArticleForm.addArticle', article);
     emit('add-article', article);
 
+    resetForm();
+}
+
+function resetForm(){
     title.value = '';
-    description.value = '';
+    description.value = ''; 
 }
 </script>
 
